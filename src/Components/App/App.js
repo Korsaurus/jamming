@@ -5,7 +5,7 @@ import  SearchBar from "../SearchBar/SearchBar"
 import SearchResults from "../SearchResults/SearchResults";
 import Playlist from "../Playlist/Playlist";
 
-import Spotify from "../../Util/Spotify";
+import Spotify from "../../util/Spotify";
 
 class App extends React.Component {
 
@@ -17,7 +17,7 @@ class App extends React.Component {
 		playlistName: "My Playlist",
 		playlistTracks: []
 	};
-  
+
   this.addTrack = this.addTrack.bind(this);
   this.removeTrack = this.removeTrack.bind(this)
   this.updatePlaylistName = this.updatePlaylistName.bind(this)
@@ -32,7 +32,7 @@ class App extends React.Component {
     }
 
     tracks.push(track)
-    this.setState({playlistTracks: tracks})
+    this.setState({ playlistTracks: tracks })
   }
  //checks if a track has the same id as another track if it doesn't it will
  //add it to our array of tracks
@@ -68,15 +68,10 @@ class App extends React.Component {
       <div>
         <h1>Ja<span className="highlight">mmm</span>ing</h1>
         <div className="App">
-            <SearchBar 
-            onSearch={this.search} />
+            <SearchBar onSearch={this.search} />
           <div className="App-playlist">
-            <SearchResults searchResults={this.state.searchResults}
-            onAdd = {this.addTrack} />
-            <Playlist playlistName={this.state.playlistName} playlistTracks={this.state.playlistTracks}
-            onRemove={this.removeTrack}
-            onNameChange={this.updatePlaylistName}
-            onSave={this.savePlaylist} /> 
+            <SearchResults searchResults={this.state.searchResults} onAdd={this.addTrack} />
+            <Playlist playlistName={this.state.playlistName} playlistTracks={this.state.playlistTracks} onRemove={this.removeTrack} onNameChange={this.updatePlaylistName} onSave={this.savePlaylist} />
           </div>
         </div>
       </div>

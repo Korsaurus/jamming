@@ -1,5 +1,5 @@
-// Creating a spotify module as an empty object
-const clientId = "539c0cf87ceb468db4baf367e57bc44e";
+// Need to add client id for it to work
+const clientId = "";
 const redirectUri = "http://localhost:3000/"
 let accessToken;
 
