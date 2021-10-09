@@ -1,4 +1,4 @@
-A guided React project that uses the Spotify API to search for songs/artists, display the results, create playlists, and push those playlists to your Spotify account.
+A Codecademy React project that uses the Spotify API to search for songs/artists, display the results, create playlists, and push those playlists to your Spotify account.
 
 ![Desktop Screenshot 2021 10 08 - 21 24 40 69](https://user-images.githubusercontent.com/90225730/136642713-f87f5ada-1c47-4b2a-97bf-c92e8fab3ae7.png)
 
